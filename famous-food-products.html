@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Famous Food Products — Wholesale South Asian Grocery Distributor, Houston TX</title>
+<meta name="description" content="Famous Food Products imports and distributes South Asian groceries, rice, spices, teas, frozen goods and household brands to retailers across the Houston area.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0E1D2B;
+  --ink-soft:#4A5C6E;
+  --paper:#FFFFFF;
+  --paper-2:#EFF5FB;
+  --forest:#0F3A66;
+  --forest-dk:#0A2540;
+  --saffron:#3FA9E8;
+  --rule:#D6E2EC;
+
+  --c1:#0A2540;
+  --c2:#123E6B;
+  --c3:#1B5A93;
+  --c4:#2176BC;
+  --c5:#2C8FD6;
+  --c6:#3FA9E8;
+  --c7:#5FC0F0;
+  --c8:#86D4F7;
+
+  --wrap:1180px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'Hanken Grotesk',system-ui,sans-serif;
+  font-size:17px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+
+.mono{
+  font-family:'DM Mono',ui-monospace,monospace;
+  font-size:11px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  font-weight:500;
+}
+
+h1,h2,h3{font-family:'Bricolage Grotesque',system-ui,sans-serif;line-height:1.04;letter-spacing:-.025em;font-weight:800}
+
+/* ---------- utility bar ---------- */
+.util{background:var(--forest-dk);color:#BFD9EE}
+.util .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;height:38px}
+.util a{text-decoration:none}
+.util a:hover{color:#fff}
+
+/* ---------- nav ---------- */
+.nav{
+  position:sticky;top:0;z-index:60;
+  background:rgba(251,247,239,.94);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--rule);
+}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:24px}
+.brandmark{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brandmark img{height:42px;width:auto;flex:none}
+.bm-text{display:flex;flex-direction:column;line-height:1.1}
+.brandmark .bm-name{
+  font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:21px;letter-spacing:-.03em;
+}
+.brandmark .bm-sub{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft)}
+.navlinks{display:flex;gap:30px;align-items:center}
+.navlinks a{
+  text-decoration:none;font-weight:600;font-size:15px;color:var(--ink-soft);
+  padding:6px 0;border-bottom:2px solid transparent;transition:.18s;
+}
+.navlinks a:hover{color:var(--forest);border-bottom-color:var(--saffron)}
+.nav-cta{
+  background:var(--forest);color:var(--paper);text-decoration:none;
+  padding:11px 20px;border-radius:2px;font-weight:700;font-size:15px;
+  transition:.18s;white-space:nowrap;
+}
+.nav-cta:hover{background:var(--forest-dk)}
+
+/* ---------- hero ---------- */
+.hero{background:var(--forest);color:var(--paper);position:relative;overflow:hidden}
+.hero::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.045) 0 1px,transparent 1px 68px);
+}
+.hero .wrap{position:relative;z-index:2;padding:88px 24px 96px;display:grid;grid-template-columns:1.25fr .85fr;gap:64px;align-items:center}
+.eyebrow{color:var(--saffron);margin-bottom:22px;display:block}
+.hero h1{font-size:clamp(40px,6.2vw,74px);color:#fff}
+.hero h1 em{font-style:normal;color:var(--saffron)}
+.hero p.lede{margin-top:24px;font-size:19px;line-height:1.55;color:#C3DAEE;max-width:52ch}
+.hero-actions{margin-top:38px;display:flex;gap:14px;flex-wrap:wrap}
+.btn{
+  display:inline-block;text-decoration:none;font-weight:700;font-size:16px;
+  padding:15px 28px;border-radius:2px;transition:.18s;border:2px solid transparent;
+}
+.btn-gold{background:var(--saffron);color:#06263F}
+.btn-gold:hover{background:#63BCF0}
+.btn-ghost{border-color:rgba(255,255,255,.4);color:#fff}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+
+/* hero card = catalog spine */
+.spine{background:var(--paper);border-radius:3px;padding:26px;box-shadow:0 24px 60px rgba(0,0,0,.28)}
+.spine h4{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:15px;color:var(--ink);letter-spacing:-.01em}
+.spine .mono{color:var(--ink-soft);display:block;margin-bottom:14px}
+.spine ul{list-style:none;margin-top:14px;border-top:1px solid var(--rule)}
+.spine li{
+  display:flex;align-items:center;gap:11px;padding:9px 0;
+  border-bottom:1px solid var(--rule);font-size:14.5px;font-weight:500;
+}
+.swatch{width:11px;height:22px;border-radius:1px;flex:none}
+.spine .foot{margin-top:16px;font-size:13px;color:var(--ink-soft);line-height:1.45}
+
+/* ---------- brand strip ---------- */
+.brands{background:var(--paper-2);border-bottom:1px solid var(--rule)}
+.brands .wrap{padding:30px 24px}
+.brands .mono{color:var(--ink-soft);text-align:center;margin-bottom:18px}
+.brandrow{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 34px}
+.brandrow span{
+  font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:19px;
+  color:#6B8299;letter-spacing:-.01em;
+}
+
+/* ---------- sections ---------- */
+section{padding:92px 0}
+.sec-head{max-width:720px;margin-bottom:52px}
+.sec-head .mono{color:var(--c4);margin-bottom:14px;display:block}
+.sec-head h2{font-size:clamp(31px,4.2vw,48px)}
+.sec-head p{margin-top:18px;font-size:18px;color:var(--ink-soft)}
+
+/* ---------- catalog (signature) ---------- */
+#catalog{background:var(--paper)}
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--rule);border-left:1px solid var(--rule)}
+.cat{
+  border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);
+  padding:26px 22px 30px;position:relative;background:var(--paper);
+  transition:background .2s, transform .2s;
+}
+.cat::before{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--tint);
+  transition:width .2s;
+}
+.cat:hover{background:#fff;transform:translateY(-3px)}
+.cat:hover::before{width:9px}
+.cat .code{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.14em;color:#12447A;font-weight:500}
+.cat h3{font-size:20px;margin-top:12px;letter-spacing:-.02em}
+.cat p{margin-top:9px;font-size:14.5px;color:var(--ink-soft);line-height:1.5}
+
+/* ---------- becoming a stockist ---------- */
+#stockist{background:var(--forest-dk);color:var(--paper)}
+#stockist .sec-head .mono{color:var(--saffron)}
+#stockist .sec-head h2{color:#fff}
+#stockist .sec-head p{color:#BCD3E6}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:34px}
+.step{border-top:2px solid var(--saffron);padding-top:22px}
+.step .num{font-family:'DM Mono',monospace;font-size:12px;letter-spacing:.16em;color:var(--saffron);font-weight:500}
+.step h3{font-size:22px;margin-top:12px;color:#fff}
+.step p{margin-top:11px;color:#BCD3E6;font-size:15.5px;line-height:1.55}
+
+/* ---------- capability ---------- */
+.cap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:8px}
+.cap{background:#fff;border:1px solid var(--rule);border-radius:3px;padding:30px 26px}
+.cap .mono{color:var(--c4);margin-bottom:12px;display:block}
+.cap h3{font-size:20px}
+.cap p{margin-top:11px;font-size:15.5px;color:var(--ink-soft);line-height:1.55}
+
+/* ---------- contact ---------- */
+#contact{background:var(--paper-2)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.form-card{background:#fff;border:1px solid var(--rule);border-radius:3px;padding:34px}
+.form-card h3{font-size:25px}
+.form-card > p{margin-top:10px;color:var(--ink-soft);font-size:15.5px}
+.field{margin-top:18px}
+.field label{display:block;font-weight:600;font-size:14px;margin-bottom:7px}
+.field input,.field textarea,.field select{
+  width:100%;padding:13px 14px;border:1px solid var(--rule);border-radius:2px;
+  font-family:inherit;font-size:16px;background:var(--paper);color:var(--ink);
+}
+.field input:focus,.field textarea:focus,.field select:focus{
+  outline:2px solid var(--forest);outline-offset:1px;border-color:var(--forest);background:#fff;
+}
+.field textarea{min-height:104px;resize:vertical}
+.submit{
+  margin-top:24px;width:100%;background:var(--forest);color:var(--paper);border:none;
+  padding:16px;font-family:inherit;font-weight:700;font-size:16px;border-radius:2px;cursor:pointer;transition:.18s;
+}
+.submit:hover{background:var(--forest-dk)}
+.formnote{margin-top:13px;font-size:13px;color:var(--ink-soft);text-align:center}
+
+.info-block{border-top:1px solid var(--rule);padding:22px 0}
+.info-block:first-of-type{border-top:none;padding-top:0}
+.info-block .mono{color:var(--ink-soft);display:block;margin-bottom:9px}
+.info-block p,.info-block a{font-size:17px;font-weight:500;text-decoration:none;line-height:1.5}
+.info-block a:hover{color:var(--forest)}
+.info-block .big{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:27px;letter-spacing:-.02em}
+.maphold{margin-top:26px;border:1px solid var(--rule);border-radius:3px;overflow:hidden;line-height:0}
+.maphold iframe{width:100%;height:250px;border:0}
+
+/* ---------- footer ---------- */
+footer{background:var(--ink);color:#9DB2C6;padding:52px 0 34px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+footer h4{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:14px;color:#fff;letter-spacing:.04em;text-transform:uppercase;margin-bottom:15px}
+footer a{text-decoration:none;font-size:15px;display:block;padding:4px 0}
+footer a:hover{color:#fff}
+footer .fname{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:23px;color:#fff;letter-spacing:-.03em}
+.foot-logo{background:#fff;border-radius:4px;padding:12px 16px;display:inline-block;margin-bottom:16px}
+.foot-logo img{height:46px;width:auto}
+.hero-logo{background:#fff;border-radius:4px;padding:10px 14px;display:inline-block;margin-bottom:22px}
+.hero-logo img{height:40px;width:auto}
+footer .fdesc{margin-top:12px;font-size:15px;line-height:1.55;max-width:36ch}
+.foot-base{border-top:1px solid #1E3448;margin-top:38px;padding-top:22px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13.5px}
+
+/* ---------- mobile call bar ---------- */
+.callbar{display:none}
+
+/* ---------- reveal ---------- */
+.rev{opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s ease}
+.rev.in{opacity:1;transform:none}
+
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .rev{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+
+/* ---------- responsive ---------- */
+@media(max-width:1000px){
+  .hero .wrap{grid-template-columns:1fr;gap:44px;padding:64px 24px 76px}
+  .cat-grid{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:1fr;gap:28px}
+  .cap-grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr;gap:38px}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .navlinks{display:none}
+}
+@media(max-width:640px){
+  body{font-size:16px}
+  section{padding:64px 0}
+  .util .wrap{font-size:10px}
+  .cat-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr;gap:30px}
+  .form-card{padding:24px}
+  .hero .wrap{padding-bottom:96px}
+  body{padding-bottom:64px}
+  .callbar{
+    display:flex;position:fixed;left:0;right:0;bottom:0;z-index:90;
+    background:var(--forest);border-top:2px solid var(--saffron);
+  }
+  .callbar a{
+    flex:1;text-align:center;padding:17px 8px;color:#fff;text-decoration:none;
+    font-weight:700;font-size:15.5px;
+  }
+  .callbar a + a{border-left:1px solid rgba(255,255,255,.22)}
+}
+</style>
+</head>
+<body>
+
+<div class="util">
+  <div class="wrap">
+    <span class="mono">Wholesale only · Houston, TX</span>
+    <a class="mono" href="tel:+12815684200">(281) 568-4200</a>
+  </div>
+</div>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brandmark" href="#top">
+      <img src="logo.png" alt="Famous Food Products">
+      <span class="bm-text">
+        <span class="bm-name">Famous Food Products</span>
+        <span class="bm-sub">Houston, TX</span>
+      </span>
+    </a>
+    <div class="navlinks">
+      <a href="#catalog">Catalog</a>
+      <a href="#stockist">Become a stockist</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a class="nav-cta" href="#contact">Request the line sheet</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="hero-logo"><img src="logo.png" alt="Famous Food Products"></span>
+      <span class="eyebrow mono">Importer &amp; wholesale distributor</span>
+      <h1>A fresh taste of home — <em>by the pallet.</em></h1>
+      <p class="lede">We import South Asian groceries, rice, spices, teas, frozen goods and household brands, and deliver them to grocery retailers across the Houston area. One supplier, eight product lines, stocked from our own warehouse.</p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="#contact">Request the line sheet</a>
+        <a class="btn btn-ghost" href="tel:+12815684200">Call (281) 568-4200</a>
+      </div>
+    </div>
+
+    <aside class="spine">
+      <span class="mono">Product lines</span>
+      <h4>Eight categories, one invoice</h4>
+      <ul>
+        <li><span class="swatch" style="background:var(--c1)"></span> Essential Grocery</li>
+        <li><span class="swatch" style="background:var(--c2)"></span> Rices &amp; Spices</li>
+        <li><span class="swatch" style="background:var(--c3)"></span> Teas</li>
+        <li><span class="swatch" style="background:var(--c4)"></span> Sweets &amp; Snacks</li>
+        <li><span class="swatch" style="background:var(--c5)"></span> Oil &amp; Ghees</li>
+        <li><span class="swatch" style="background:var(--c6)"></span> Beverages &amp; Juices</li>
+        <li><span class="swatch" style="background:var(--c7)"></span> Frozen &amp; Refrigerated</li>
+        <li><span class="swatch" style="background:var(--c8)"></span> Health &amp; Beauty</li>
+      </ul>
+      <p class="foot">Stores ordering across multiple lines consolidate onto a single delivery and a single invoice.</p>
+    </aside>
+  </div>
+</header>
+
+<div class="brands">
+  <div class="wrap">
+    <span class="mono">Brands we carry</span>
+    <div class="brandrow">
+      <span>EBM</span><span>National</span><span>Pakola</span><span>Shezan</span>
+      <span>Hemani</span><span>Allegro</span><span>Dawn Foods</span><span>Nestlé</span>
+      <span>Knorr</span><span>Tea India</span>
+    </div>
+  </div>
+</div>
+
+<section id="catalog">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <span class="mono">The catalog</span>
+      <h2>Eight product lines, stocked and ready.</h2>
+      <p>Everything below ships from our Houston warehouse. Ask for the current line sheet and we'll send pricing, case packs and available sizes.</p>
+    </div>
+
+    <div class="cat-grid">
+      <article class="cat rev" style="--tint:var(--c1)">
+        <span class="code">FF-01</span>
+        <h3>Essential Grocery</h3>
+        <p>The everyday shelf: flours, lentils, pulses, canned goods and pantry staples.</p>
+      </article>
+      <article class="cat rev" style="--tint:var(--c2)">
+        <span class="code">FF-02</span>
+        <h3>Rices &amp; Spices</h3>
+        <p>Basmati and sella rice by the bag, plus whole and ground masalas across sizes.</p>
+      </article>
+      <article class="cat rev" style="--tint:var(--c3)">
+        <span class="code">FF-03</span>
+        <h3>Teas</h3>
+        <p>Loose leaf and bagged tea from the brands your customers already ask for by name.</p>
+      </article>
+      <article class="cat rev" style="--tint:var(--c4)">
+        <span class="code">FF-04</span>
+        <h3>Sweets &amp; Snacks</h3>
+        <p>Biscuits, namkeen, confectionery and mithai — the fastest-turning aisle in the store.</p>
+      </article>
+      <article class="cat rev" style="--tint:var(--c5)">
+        <span class="code">FF-05</span>
+        <h3>Oil &amp; Ghees</h3>
+        <p>Cooking oils and ghee in retail and bulk sizes, in cases sized for shelf turnover.</p>
+      </article>
+      <article class="cat rev" style="--tint:var(--c6)">
+        <span class="code">FF-06</span>
+        <h3>Beverages &amp; Juices</h3>
+        <p>Bottled drinks, juices and squashes, including brands hard to source anywhere else in Texas.</p>
+      </article>
+      <article class="cat rev" style="--tint:var(--c7)">
+        <span class="code">FF-07</span>
+        <h3>Frozen &amp; Refrigerated</h3>
+        <p>Parathas, samosas, kebabs and frozen vegetables, moved in temperature-controlled transport.</p>
+      </article>
+      <article class="cat rev" style="--tint:var(--c8)">
+        <span class="code">FF-08</span>
+        <h3>Health &amp; Beauty</h3>
+        <p>Herbal oils, personal care and household lines that round out the non-food aisle.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="stockist">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <span class="mono">Becoming a stockist</span>
+      <h2>Three steps to your first delivery.</h2>
+      <p>Opening an account is straightforward. Most new stores are ordering within the same week.</p>
+    </div>
+    <div class="steps">
+      <div class="step rev">
+        <span class="num">STEP 01</span>
+        <h3>Tell us about your store</h3>
+        <p>Send your store name, location and the categories you want to carry. Call or use the form — either works.</p>
+      </div>
+      <div class="step rev">
+        <span class="num">STEP 02</span>
+        <h3>Get the line sheet</h3>
+        <p>We send current pricing, case packs and sizes across all eight lines so you can build your first order against real numbers.</p>
+      </div>
+      <div class="step rev">
+        <span class="num">STEP 03</span>
+        <h3>Place your order</h3>
+        <p>Order once and receive everything on one delivery, on one invoice. Warehouse pickup is available if you'd rather collect.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <span class="mono">Why stores work with us</span>
+      <h2>Built around what a grocery buyer actually needs.</h2>
+      <p>Famous Food Products has been built on the commitment of delivering a fresh taste of home to Asian consumers living in Western countries — which starts with the shops that serve them.</p>
+    </div>
+    <div class="cap-grid">
+      <div class="cap rev">
+        <span class="mono">One supplier</span>
+        <h3>Eight lines, one invoice</h3>
+        <p>Rather than chasing separate suppliers for rice, frozen goods and personal care, order across every category at once and reconcile a single delivery.</p>
+      </div>
+      <div class="cap rev">
+        <span class="mono">Cold chain</span>
+        <h3>Frozen handled properly</h3>
+        <p>Frozen and refrigerated items are held and transported under temperature control, so what leaves the warehouse arrives in the condition your customers expect.</p>
+      </div>
+      <div class="cap rev">
+        <span class="mono">Local</span>
+        <h3>A warehouse, not a call center</h3>
+        <p>We're on Kinghurst Drive in Houston. If something's wrong with an order, you're speaking to the people who packed it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <span class="mono">Wholesale inquiries</span>
+      <h2>Get the current line sheet.</h2>
+      <p>Retailers and food service only. Tell us a little about your store and we'll send pricing the same business day where we can.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="form-card rev">
+        <h3>Request pricing</h3>
+        <p>Fill this in and it will open your email with the details ready to send.</p>
+
+        <div class="field">
+          <label for="f-store">Store or business name</label>
+          <input id="f-store" type="text" placeholder="e.g. Maharaja Groceries">
+        </div>
+        <div class="field">
+          <label for="f-name">Your name</label>
+          <input id="f-name" type="text" placeholder="Full name">
+        </div>
+        <div class="field">
+          <label for="f-phone">Phone</label>
+          <input id="f-phone" type="tel" placeholder="(281) 555-0100">
+        </div>
+        <div class="field">
+          <label for="f-city">City</label>
+          <input id="f-city" type="text" placeholder="Houston, TX">
+        </div>
+        <div class="field">
+          <label for="f-cat">Which lines are you interested in?</label>
+          <select id="f-cat">
+            <option>All eight lines</option>
+            <option>Essential Grocery</option>
+            <option>Rices &amp; Spices</option>
+            <option>Teas</option>
+            <option>Sweets &amp; Snacks</option>
+            <option>Oil &amp; Ghees</option>
+            <option>Beverages &amp; Juices</option>
+            <option>Frozen &amp; Refrigerated</option>
+            <option>Health &amp; Beauty</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-msg">Anything else?</label>
+          <textarea id="f-msg" placeholder="Specific brands or products you're looking for"></textarea>
+        </div>
+        <button class="submit" id="sendBtn" type="button">Send inquiry</button>
+        <p class="formnote">Or just call <a href="tel:+12815684200" style="color:var(--forest);font-weight:700">(281) 568-4200</a> during business hours.</p>
+      </div>
+
+      <div class="rev">
+        <div class="info-block">
+          <span class="mono">Call</span>
+          <a class="big" href="tel:+12815684200">(281) 568-4200</a>
+        </div>
+        <div class="info-block">
+          <span class="mono">Email</span>
+          <a href="mailto:famousfoodproducts@gmail.com">famousfoodproducts@gmail.com</a>
+        </div>
+        <div class="info-block">
+          <span class="mono">Warehouse</span>
+          <p>10507 Kinghurst Dr<br>Houston, TX 77099</p>
+        </div>
+        <div class="info-block">
+          <span class="mono">Hours</span>
+          <p>Monday – Friday &nbsp;9:00am – 5:00pm<br>Saturday &amp; Sunday &nbsp;Closed</p>
+        </div>
+        <div class="maphold">
+          <iframe
+            title="Famous Food Products warehouse location"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=10507+Kinghurst+Dr,+Houston,+TX+77099&output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <span class="foot-logo"><img src="logo.png" alt="Famous Food Products"></span><br>
+        <span class="fname">Famous Food Products</span>
+        <p class="fdesc">Importer and wholesale distributor of South Asian groceries, serving grocery retailers from our Houston warehouse.</p>
+      </div>
+      <div>
+        <h4>Catalog</h4>
+        <a href="#catalog">Essential Grocery</a>
+        <a href="#catalog">Rices &amp; Spices</a>
+        <a href="#catalog">Teas</a>
+        <a href="#catalog">Sweets &amp; Snacks</a>
+        <a href="#catalog">Oil &amp; Ghees</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#about">About us</a>
+        <a href="#stockist">Become a stockist</a>
+        <a href="#contact">Contact</a>
+        <a href="tel:+12815684200">(281) 568-4200</a>
+        <a href="mailto:famousfoodproducts@gmail.com">Email us</a>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© 2026 Famous Food Products. All rights reserved.</span>
+      <span>10507 Kinghurst Dr, Houston, TX 77099</span>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a href="tel:+12815684200">Call now</a>
+  <a href="#contact">Line sheet</a>
+</div>
+
+<script>
+(function(){
+  var btn = document.getElementById('sendBtn');
+  if(btn){
+    btn.addEventListener('click', function(){
+      function v(id){ var el = document.getElementById(id); return el ? el.value.trim() : ''; }
+      var store = v('f-store') || 'Not given';
+      var name  = v('f-name')  || 'Not given';
+      var phone = v('f-phone') || 'Not given';
+      var city  = v('f-city')  || 'Not given';
+      var cat   = v('f-cat');
+      var msg   = v('f-msg')   || 'None';
+
+      var subject = 'Wholesale inquiry — ' + store;
+      var body =
+        'Store: ' + store + '\n' +
+        'Contact: ' + name + '\n' +
+        'Phone: ' + phone + '\n' +
+        'City: ' + city + '\n' +
+        'Lines of interest: ' + cat + '\n\n' +
+        'Notes:\n' + msg + '\n';
+
+      window.location.href = 'mailto:famousfoodproducts@gmail.com?subject=' +
+        encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    });
+  }
+
+  var els = document.querySelectorAll('.rev');
+  if(!('IntersectionObserver' in window)){
+    els.forEach(function(e){ e.classList.add('in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
+    });
+  }, {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(e){ io.observe(e); });
+})();
+</script>
+
+</body>
+</html>
